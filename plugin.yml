@@ -1,0 +1,60 @@
+main: com.breakmc.hardcore.Main
+version: 1.0
+name: Hardcore
+
+commands:
+  t:
+    team:
+      warp:
+          aliases: [go]
+	    track:
+	        usage: "Use /<command> all or /<command> [playerName]"
+		  spawn:
+		    goas:
+		        aliases: [warpas]
+			    permission: warps.admin
+			        permission-message: "吾锡五五雾务cYou do not have permission to perform this command!"
+				  setradius:
+				      aliases: [setr, setspawnradius, ssr, setsr]
+				          permission: spawn.admin
+					      permission-message: "吾锡五五雾务cYou do not have permission to perform this command!"
+					        confirm:
+						    aliases: [c]
+						      deny:
+						          aliases: [d]
+							    home:
+							      sethome:
+							        getuuid:
+								  resetspawn:
+								    teamas:
+								        permission: teams.admin
+									    aliases: [tas]
+									        permission-message: "吾锡五五雾务cYou do not have permission to perform this command!"
+										  godelas:
+										      permission: warps.admin
+										          permission-message: "吾锡五五雾务cYou do not have permission to perform this command!"
+											    homeas:
+											        permission: warps.admin
+												    permission-message: "吾锡五五雾务cYou do not have permission to perform this command!"
+												    permissions:
+												      warps.#:
+												          description: Warp.<numberofwarps> 
+													    warps.maxwarps:
+													        default: op
+														  warps.admin:
+														      default: op
+														        spawn.admin:
+															    default: op
+															      warps.vip:
+															          default: false
+																    warps.mvp:
+																        default: false
+																	  warps.pro:
+																	      default: false
+																	        deathkick.bypass:
+																		    default: op
+																		      teams.admin:
+																		          default: op
+																			    abundle.mod:
+																			        default: op
+
